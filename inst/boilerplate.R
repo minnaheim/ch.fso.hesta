@@ -68,7 +68,7 @@ archive_import_history(vintages_dt, repository_path = ".")
 ## Step 5: Write & Validate Metadata
 
 # check if info is available via api
-indpau_meta <- read_dataset_ts_metadata("ch.fso.indpau") 
+indpau_meta <- read_dataset_ts_metadata("ch.fso.hesta") # empty list
 
 render_metadata()
 meta <- read_meta(".")
@@ -76,8 +76,10 @@ validate_metadata(meta) # TRUE
 
 
 ## Step 6: Seal Archive
-key <- "...."
+key <- "679fb20c843b2ae04d8e5d1e1494d3216dbe947d5a783ab3063f6351ccb642da"
 devtools::load_all()
+library(deloRean)
+library(opentimeseries)
 library(digest)
 checksum_input <- generate_checksum_input(key = key)
 archive_seal(checksum_input)

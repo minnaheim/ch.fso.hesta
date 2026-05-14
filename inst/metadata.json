@@ -1,0 +1,832 @@
+{
+  "country": "ch",
+  "provider": "fso",
+  "dataset": "hesta",
+  "title": {
+    "en": "Hotel sector: arrivals and overnight stays of open establishments by Year, Month, Canton, Visitors' country of residence and Indicator",
+    "de": "Hotellerie: Ankünfte und Logiernächte der geöffneten Betriebe nach Jahr, Monat, Kanton, Herkunftsland und Indikator",
+    "fr": "Hôtellerie: arrivées et nuitées des établissements ouverts selon Année, Mois, Canton, Pays de provenance et Indicateur",
+    "it": "Settore alberghiero: arrivi e pernottamenti degli stabilimenti aperti da Anno, Mese, Cantone, Paese di provenienza e Indicatore"
+  },
+  "source_name": {
+    "en": "FSO",
+    "de": "BFS",
+    "fr": "OFS",
+    "it": "UST"
+  },
+  "source_url": "https://www.fso.admin.ch",
+  "dataset_frequency": "M",
+  "units": {
+    "indicator": {
+      "en": "Count",
+      "de": "Anzahl",
+      "fr": "Nombre",
+      "it": "Numero"
+    }
+  },
+  "aggregate": {
+    "all": "sum"
+  },
+  "dim_order": [
+    "destination",
+    "origin",
+    "indicator"
+  ],
+  "hierarchy": {
+    "destination": {
+      "8100": {
+        "1": {},
+        "2": {},
+        "3": {},
+        "4": {},
+        "5": {},
+        "6": {},
+        "7": {},
+        "8": {},
+        "9": {},
+        "10": {},
+        "11": {},
+        "12": {},
+        "13": {},
+        "14": {},
+        "15": {},
+        "16": {},
+        "17": {},
+        "18": {},
+        "19": {},
+        "20": {},
+        "21": {},
+        "22": {},
+        "23": {},
+        "24": {},
+        "25": {},
+        "26": {}
+      }
+    },
+    "origin": {
+      "00": {
+        "1": {},
+        "10": {
+          "85": {},
+          "86": {},
+          "87": {}
+        },
+        "11": {},
+        "13": {},
+        "14": {},
+        "15": {},
+        "16": {},
+        "17": {},
+        "18": {},
+        "19": {},
+        "20": {},
+        "21": {},
+        "22": {},
+        "23": {},
+        "24": {},
+        "25": {},
+        "26": {},
+        "28": {},
+        "29": {},
+        "31": {},
+        "32": {},
+        "33": {},
+        "34": {},
+        "35": {},
+        "36": {},
+        "37": {},
+        "38": {},
+        "39": {},
+        "40": {},
+        "41": {},
+        "42": {},
+        "43": {},
+        "44": {},
+        "45": {},
+        "47": {},
+        "48": {},
+        "49": {},
+        "51": {},
+        "52": {},
+        "53": {},
+        "54": {},
+        "60": {},
+        "61": {},
+        "62": {},
+        "64": {},
+        "66": {},
+        "68": {},
+        "69": {},
+        "71": {
+          "70": {},
+          "79": {}
+        },
+        "72": {},
+        "73": {},
+        "74": {},
+        "75": {},
+        "76": {},
+        "77": {},
+        "78": {},
+        "80": {},
+        "81": {},
+        "82": {},
+        "83": {},
+        "84": {},
+        "88": {},
+        "89": {},
+        "90": {
+          "98": {}
+        },
+        "91": {},
+        "92": {},
+        "93": {},
+        "94": {},
+        "95": {},
+        "96": {},
+        "97": {}
+      }
+    },
+    "indicator": {
+      "1": {},
+      "2": {}
+    }
+  },
+  "labels": {
+    "dimnames": {
+      "destination": {
+        "en": "Canton",
+        "de": "Kanton",
+        "fr": "Canton",
+        "it": "Cantone"
+      },
+      "indicator": {
+        "en": "Indicator",
+        "de": "Indikator",
+        "fr": "Indicateur",
+        "it": "Indicatore"
+      },
+      "origin": {
+        "en": "Visitors' country of residence",
+        "de": "Herkunftsland",
+        "fr": "Pays de provenance",
+        "it": "Paese di provenienza"
+      }
+    },
+    "destination": {
+      "1": {
+        "en": "Zurich",
+        "de": "Zürich",
+        "fr": "Zürich",
+        "it": "Zürich"
+      },
+      "2": {
+        "en": "Bern",
+        "de": "Bern / Berne",
+        "fr": "Bern / Berne",
+        "it": "Bern / Berne"
+      },
+      "3": {
+        "en": "Lucerne",
+        "de": "Luzern",
+        "fr": "Luzern",
+        "it": "Luzern"
+      },
+      "4": {
+        "en": "Uri",
+        "de": "Uri",
+        "fr": "Uri",
+        "it": "Uri"
+      },
+      "5": {
+        "en": "Schwyz",
+        "de": "Schwyz",
+        "fr": "Schwyz",
+        "it": "Schwyz"
+      },
+      "6": {
+        "en": "Obwalden",
+        "de": "Obwalden",
+        "fr": "Obwalden",
+        "it": "Obwalden"
+      },
+      "7": {
+        "en": "Nidwalden",
+        "de": "Nidwalden",
+        "fr": "Nidwalden",
+        "it": "Nidwalden"
+      },
+      "8": {
+        "en": "Glarus",
+        "de": "Glarus",
+        "fr": "Glarus",
+        "it": "Glarus"
+      },
+      "9": {
+        "en": "Zug",
+        "de": "Zug",
+        "fr": "Zug",
+        "it": "Zug"
+      },
+      "10": {
+        "en": "Fribourg",
+        "de": "Fribourg / Freiburg",
+        "fr": "Fribourg / Freiburg",
+        "it": "Fribourg / Freiburg"
+      },
+      "11": {
+        "en": "Solothurn",
+        "de": "Solothurn",
+        "fr": "Solothurn",
+        "it": "Solothurn"
+      },
+      "12": {
+        "en": "Basel-Stadt",
+        "de": "Basel-Stadt",
+        "fr": "Basel-Stadt",
+        "it": "Basel-Stadt"
+      },
+      "13": {
+        "en": "Basel-Landschaft",
+        "de": "Basel-Landschaft",
+        "fr": "Basel-Landschaft",
+        "it": "Basel-Landschaft"
+      },
+      "14": {
+        "en": "Schaffhausen",
+        "de": "Schaffhausen",
+        "fr": "Schaffhausen",
+        "it": "Schaffhausen"
+      },
+      "15": {
+        "en": "Appenzell Ausserrhoden",
+        "de": "Appenzell Ausserrhoden",
+        "fr": "Appenzell Ausserrhoden",
+        "it": "Appenzell Ausserrhoden"
+      },
+      "16": {
+        "en": "Appenzell Innerrhoden",
+        "de": "Appenzell Innerrhoden",
+        "fr": "Appenzell Innerrhoden",
+        "it": "Appenzell Innerrhoden"
+      },
+      "17": {
+        "en": "St. Gallen",
+        "de": "St. Gallen",
+        "fr": "St. Gallen",
+        "it": "St. Gallen"
+      },
+      "18": {
+        "en": "Graubünden",
+        "de": "Graubünden / Grigioni / Grischun",
+        "fr": "Graubünden / Grigioni / Grischun",
+        "it": "Graubünden / Grigioni / Grischun"
+      },
+      "19": {
+        "en": "Aargau",
+        "de": "Aargau",
+        "fr": "Aargau",
+        "it": "Aargau"
+      },
+      "20": {
+        "en": "Thurgau",
+        "de": "Thurgau",
+        "fr": "Thurgau",
+        "it": "Thurgau"
+      },
+      "21": {
+        "en": "Ticino",
+        "de": "Ticino",
+        "fr": "Ticino",
+        "it": "Ticino"
+      },
+      "22": {
+        "en": "Vaud",
+        "de": "Vaud",
+        "fr": "Vaud",
+        "it": "Vaud"
+      },
+      "23": {
+        "en": "Valais",
+        "de": "Valais / Wallis",
+        "fr": "Valais / Wallis",
+        "it": "Valais / Wallis"
+      },
+      "24": {
+        "en": "Neuchâtel",
+        "de": "Neuchâtel",
+        "fr": "Neuchâtel",
+        "it": "Neuchâtel"
+      },
+      "25": {
+        "en": "Geneva",
+        "de": "Genève",
+        "fr": "Genève",
+        "it": "Genève"
+      },
+      "26": {
+        "en": "Jura",
+        "de": "Jura",
+        "fr": "Jura",
+        "it": "Jura"
+      },
+      "8100": {
+        "en": "Switzerland",
+        "de": "Schweiz",
+        "fr": "Suisse",
+        "it": "Schweiz"
+      }
+    },
+    "origin": {
+      "00": {
+        "en": "Visitors' country of residence - total",
+        "de": "Herkunftsland - Total",
+        "fr": "Pays de provenance - total",
+        "it": "Paesi di provenienza - totale"
+      },
+      "1": {
+        "en": "Switzerland",
+        "de": "Schweiz",
+        "fr": "Suisse",
+        "it": "Svizzera"
+      },
+      "10": {
+        "en": "Baltic States",
+        "de": "Baltische Staaten",
+        "fr": "Pays baltes",
+        "it": "Paesi baltici"
+      },
+      "11": {
+        "en": "Germany",
+        "de": "Deutschland",
+        "fr": "Allemagne",
+        "it": "Germania"
+      },
+      "13": {
+        "en": "France",
+        "de": "Frankreich",
+        "fr": "France",
+        "it": "Francia"
+      },
+      "14": {
+        "en": "Italy",
+        "de": "Italien",
+        "fr": "Italie",
+        "it": "Italia"
+      },
+      "15": {
+        "en": "Austria",
+        "de": "Österreich",
+        "fr": "Autriche",
+        "it": "Austria"
+      },
+      "16": {
+        "en": "United Kingdom",
+        "de": "Vereinigtes \"Königreich\"",
+        "fr": "Royaume-Uni",
+        "it": "Regno Unito"
+      },
+      "17": {
+        "en": "Irland",
+        "de": "Irland",
+        "fr": "Irlande",
+        "it": "Irlanda"
+      },
+      "18": {
+        "en": "Netherlands",
+        "de": "Niederlande",
+        "fr": "Pays-Bas",
+        "it": "Paesi Bassi"
+      },
+      "19": {
+        "en": "Belgium",
+        "de": "Belgien",
+        "fr": "Belgique",
+        "it": "Belgio"
+      },
+      "20": {
+        "en": "Luxembourg",
+        "de": "Luxemburg",
+        "fr": "Luxembourg",
+        "it": "Lussemburgo"
+      },
+      "21": {
+        "en": "Denmark",
+        "de": "Dänemark",
+        "fr": "Danemark",
+        "it": "Danimarca"
+      },
+      "22": {
+        "en": "Sweden",
+        "de": "Schweden",
+        "fr": "Suède",
+        "it": "Svezia"
+      },
+      "23": {
+        "en": "Norway",
+        "de": "Norwegen",
+        "fr": "Norvège",
+        "it": "Norvegia"
+      },
+      "24": {
+        "en": "Finland",
+        "de": "Finnland",
+        "fr": "Finlande",
+        "it": "Finlandia"
+      },
+      "25": {
+        "en": "Spain",
+        "de": "Spanien",
+        "fr": "Espagne",
+        "it": "Spagna"
+      },
+      "26": {
+        "en": "Portugal",
+        "de": "Portugal",
+        "fr": "Portugal",
+        "it": "Portogallo"
+      },
+      "28": {
+        "en": "Greece",
+        "de": "Griechenland",
+        "fr": "Grèce",
+        "it": "Grecia"
+      },
+      "29": {
+        "en": "Turkey",
+        "de": "Türkei",
+        "fr": "Turquie",
+        "it": "Turchia"
+      },
+      "31": {
+        "en": "Other European countries",
+        "de": "Übriges Europa",
+        "fr": "Autres Europe",
+        "it": "Altri Europa"
+      },
+      "32": {
+        "en": "Liechtenstein",
+        "de": "Liechtenstein",
+        "fr": "Liechtenstein",
+        "it": "Liechtenstein"
+      },
+      "33": {
+        "en": "Iceland",
+        "de": "Island",
+        "fr": "Islande",
+        "it": "Islanda"
+      },
+      "34": {
+        "en": "Poland",
+        "de": "Polen",
+        "fr": "Pologne",
+        "it": "Polonia"
+      },
+      "35": {
+        "en": "Hungary",
+        "de": "Ungarn",
+        "fr": "Hongrie",
+        "it": "Ungheria"
+      },
+      "36": {
+        "en": "Belarus",
+        "de": "Belarus",
+        "fr": "Bélarus",
+        "it": "Belarus"
+      },
+      "37": {
+        "en": "Bulgaria",
+        "de": "Bulgarien",
+        "fr": "Bulgarie",
+        "it": "Bulgaria"
+      },
+      "38": {
+        "en": "Malta",
+        "de": "Malta",
+        "fr": "Malte",
+        "it": "Malta"
+      },
+      "39": {
+        "en": "Cyprus",
+        "de": "Zypern",
+        "fr": "Chypre",
+        "it": "Cipro"
+      },
+      "40": {
+        "en": "Chile",
+        "de": "Chile",
+        "fr": "Chili",
+        "it": "Cile"
+      },
+      "41": {
+        "en": "United States",
+        "de": "Vereinigte Staaten",
+        "fr": "États-Unis",
+        "it": "Stati Uniti"
+      },
+      "42": {
+        "en": "Canada",
+        "de": "Kanada",
+        "fr": "Canada",
+        "it": "Canada"
+      },
+      "43": {
+        "en": "Mexico",
+        "de": "Mexiko",
+        "fr": "Mexique",
+        "it": "Messico"
+      },
+      "44": {
+        "en": "Brazil",
+        "de": "Brasilien",
+        "fr": "Brésil",
+        "it": "Brasile"
+      },
+      "45": {
+        "en": "Argentina",
+        "de": "Argentinien",
+        "fr": "Argentine",
+        "it": "Argentina"
+      },
+      "47": {
+        "en": "Central America, Caribbean",
+        "de": "Zentralamerika, Karibik",
+        "fr": "Amérique Centrale, Caraïbes",
+        "it": "America Centrale, Caraibi"
+      },
+      "48": {
+        "en": "Other South American countries",
+        "de": "Übriges Südamerika",
+        "fr": "Autres Amérique du Sud",
+        "it": "Altri Sudamerica"
+      },
+      "49": {
+        "en": "Other Central American countries",
+        "de": "Übriges Zentralamerika, Karibik",
+        "fr": "Autres Amérique centrale, Caraïbes",
+        "it": "Altri America Centrale, Caraibi"
+      },
+      "51": {
+        "en": "Egypt",
+        "de": "Ägypten",
+        "fr": "Égypte",
+        "it": "Egitto"
+      },
+      "52": {
+        "en": "Other North African countries",
+        "de": "Übriges Nordafrika",
+        "fr": "Autres Afrique du Nord",
+        "it": "Altri Nordafrica"
+      },
+      "53": {
+        "en": "South Africa",
+        "de": "Südafrika",
+        "fr": "Afrique du Sud",
+        "it": "Sudafrica"
+      },
+      "54": {
+        "en": "Other African countries",
+        "de": "Übriges Afrika",
+        "fr": "Autres Afrique",
+        "it": "Altri Africa"
+      },
+      "60": {
+        "en": "Bahrain",
+        "de": "Bahrain",
+        "fr": "Bahreïn",
+        "it": "Bahrein"
+      },
+      "61": {
+        "en": "Israel",
+        "de": "Israel",
+        "fr": "Israël",
+        "it": "Israele"
+      },
+      "62": {
+        "en": "India",
+        "de": "Indien",
+        "fr": "Inde",
+        "it": "India"
+      },
+      "64": {
+        "en": "Japan",
+        "de": "Japan",
+        "fr": "Japon",
+        "it": "Giappone"
+      },
+      "66": {
+        "en": "Other South-East Asian countries",
+        "de": "Übriges Süd- und Ostasien",
+        "fr": "Autres Asie de l'Est",
+        "it": "Altri Asia del Sud e dell'Est"
+      },
+      "68": {
+        "en": "Qatar",
+        "de": "Katar",
+        "fr": "Qatar",
+        "it": "Qatar"
+      },
+      "69": {
+        "en": "Kuwait",
+        "de": "Kuwait",
+        "fr": "Koweït",
+        "it": "Kuwait"
+      },
+      "70": {
+        "en": "Australia",
+        "de": "Australien",
+        "fr": "Australie",
+        "it": "Australia"
+      },
+      "71": {
+        "en": "Australia, New Zealand, Oceania",
+        "de": "Australien, Neuseeland, Ozeanien",
+        "fr": "Australie, N.Zélande, Océanie",
+        "it": "Australie, Nuova Zelanda, Ozeania"
+      },
+      "72": {
+        "en": "China",
+        "de": "China",
+        "fr": "Chine",
+        "it": "Cina"
+      },
+      "73": {
+        "en": "Gulf States",
+        "de": "Golf-Staaten",
+        "fr": "Pays du Golfe",
+        "it": "Paesi del Golfo"
+      },
+      "74": {
+        "en": "Hong Kong",
+        "de": "Hongkong",
+        "fr": "Hong Kong",
+        "it": "Hong Kong"
+      },
+      "75": {
+        "en": "Indonesia",
+        "de": "Indonesien",
+        "fr": "Indonésie",
+        "it": "Indonesia"
+      },
+      "76": {
+        "en": "South Korea",
+        "de": "Korea (Süd-)",
+        "fr": "Corée (Sud)",
+        "it": "Corea (Sud)"
+      },
+      "77": {
+        "en": "Malaysia",
+        "de": "Malaysia",
+        "fr": "Malaisie",
+        "it": "Malaysia"
+      },
+      "78": {
+        "en": "Philippines",
+        "de": "Philippinen",
+        "fr": "Philippines",
+        "it": "Filippine"
+      },
+      "79": {
+        "en": "New Zealand, Oceania",
+        "de": "Neuseeland, Ozeanien",
+        "fr": "Nouvelle Zélande, Océanie",
+        "it": "Nuova Zelanda, Oceania"
+      },
+      "80": {
+        "en": "Singapore",
+        "de": "Singapur",
+        "fr": "Singapour",
+        "it": "Singapore"
+      },
+      "81": {
+        "en": "Oman",
+        "de": "Oman",
+        "fr": "Oman",
+        "it": "Oman"
+      },
+      "82": {
+        "en": "Taiwan (Chinese Taipei)",
+        "de": "Taiwan (Chinesisches Taipei)",
+        "fr": "Taïwan (Taipei chinois)",
+        "it": "Taiwan (Taipei cinese)"
+      },
+      "83": {
+        "en": "Thailand",
+        "de": "Thailand",
+        "fr": "Thaïlande",
+        "it": "Thailandia"
+      },
+      "84": {
+        "en": "Other West Asian countries",
+        "de": "Übriges Westasien",
+        "fr": "Autres Asie de l'Ouest",
+        "it": "Altri Asia dell'Ovest"
+      },
+      "85": {
+        "en": "Estonia",
+        "de": "Estland",
+        "fr": "Estonie",
+        "it": "Estonia"
+      },
+      "86": {
+        "en": "Latvia",
+        "de": "Lettland",
+        "fr": "Lettonie",
+        "it": "Lettonia"
+      },
+      "87": {
+        "en": "Lithuania",
+        "de": "Litauen",
+        "fr": "Lituanie",
+        "it": "Lituania"
+      },
+      "88": {
+        "en": "Saudi Arabia",
+        "de": "Saudi-Arabien",
+        "fr": "Arabie saoudite",
+        "it": "Arabia Saudita"
+      },
+      "89": {
+        "en": "United Arab Emirates",
+        "de": "Vereinigte Arabische Emirate",
+        "fr": "Émirats arabes unis",
+        "it": "Emirati arabi uniti"
+      },
+      "90": {
+        "en": "Serbia and Montenegro",
+        "de": "Serbien und Montenegro",
+        "fr": "Serbie et \"Monténégro\"",
+        "it": "Serbia e Montenegro"
+      },
+      "91": {
+        "en": "Croatia",
+        "de": "Kroatien",
+        "fr": "Croatie",
+        "it": "Croazia"
+      },
+      "92": {
+        "en": "Romania",
+        "de": "Rumänien",
+        "fr": "Roumanie",
+        "it": "Romania"
+      },
+      "93": {
+        "en": "Russia",
+        "de": "Russland",
+        "fr": "Russie",
+        "it": "Russia"
+      },
+      "94": {
+        "en": "Slovakia",
+        "de": "Slowakei",
+        "fr": "Slovaquie",
+        "it": "Slovacchia"
+      },
+      "95": {
+        "en": "Slovenia",
+        "de": "Slowenien",
+        "fr": "Slovénie",
+        "it": "Slovenia"
+      },
+      "96": {
+        "en": "Czechia",
+        "de": "Tschechien",
+        "fr": "Tchéquie",
+        "it": "Cechia"
+      },
+      "97": {
+        "en": "Ukraine",
+        "de": "Ukraine",
+        "fr": "Ukraine",
+        "it": "Ucraina"
+      },
+      "98": {
+        "en": "Serbia",
+        "de": "Serbien",
+        "fr": "Serbie",
+        "it": "Serbia"
+      }
+    },
+    "indicator": {
+      "1": {
+        "en": "Arrivals",
+        "de": "Ankünfte",
+        "fr": "Arrivées",
+        "it": "Arrivi"
+      },
+      "2": {
+        "en": "Overnight stays",
+        "de": "Logiernächte",
+        "fr": "Nuitées",
+        "it": "Pernottamenti"
+      }
+    }
+  },
+  "details": {
+    "en": "Hotel industry: hotels and health establishments\nOpen establishments: number of establishments open during the survey month for at least one day\n",
+    "de": "Hotellerie: Hotels und Kurbetriebe\nGeöffnete Betriebe: Anzahl der im Erhebungsmonat während mindestens einem Tag geöffneten Betriebe\n",
+    "fr": "Hôtellerie: hôtels et établissements de cure\nEtablissements ouverts: nombre d'établissements ouverts au moins un jour pendant le mois sous revue\n",
+    "it": "Settore alberghiero: alberghi e case di cura\nStabilimenti aperti: numero di stabilimenti aperti almeno un giorno nel mese censito\n"
+  },
+  "update_checksum": "9cdfb79642beea2220d899bc00e593037d83108735bf2c7002d5166bbead5a49"
+}

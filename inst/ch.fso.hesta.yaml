@@ -1,39 +1,31 @@
-# OpenTSI Dataset Metadata
-country: "ch"
-provider: "fso"
-dataset: "hesta"
-
 title:
-  en: "Hotel sector: arrivals and overnight stays of open establishments by Year, Month, Canton, Visitors' country of residence and Indicator"
-  de: "Hotellerie: Ankünfte und Logiernächte der geöffneten Betriebe nach Jahr, Monat, Kanton, Herkunftsland und Indikator"
-  fr: "Hôtellerie: arrivées et nuitées des établissements ouverts selon Année, Mois, Canton, Pays de provenance et Indicateur"
-  it: "Settore alberghiero: arrivi e pernottamenti degli stabilimenti aperti da Anno, Mese, Cantone, Paese di provenienza e Indicatore"
-
-source_name:
-  en: "FSO"
-  de: "BFS"
-  fr: "OFS"
-  it: "UST"
-
-source_url: "https://www.fso.admin.ch"
-
-dataset_frequency: "M"
-
+  en: 'Hotel sector: arrivals and overnight stays of open establishments by Year,
+    Month, Canton, Visitors'' country of residence and Indicator'
+  de: 'Hotellerie: Ankünfte und Logiernächte der geöffneten Betriebe nach Jahr, Monat,
+    Kanton, Herkunftsland und Indikator'
+  fr: 'Hôtellerie: arrivées et nuitées des établissements ouverts selon Année, Mois,
+    Canton, Pays de provenance et Indicateur'
+  it: 'Settore alberghiero: arrivi e pernottamenti degli stabilimenti aperti da Anno,
+    Mese, Cantone, Paese di provenienza e Indicatore'
+source.name:
+  en: FSO
+  de: BFS
+  fr: OFS
+  it: UST
+source.url:
+- https://www.fso.admin.ch
 units:
   indicator:
     en: Count
     de: Anzahl
     fr: Nombre
     it: Numero
-
 aggregate:
   all: sum
-
-dim_order:
-  - destination
-  - origin
-  - indicator
-
+dim.order:
+- destination
+- origin
+- indicator
 hierarchy:
   destination:
     '8100':
@@ -103,8 +95,8 @@ hierarchy:
       '44': ~
       '45': ~
       '47': ~
-      '48': ~
       '49': ~
+      '48': ~
       '51': ~
       '52': ~
       '53': ~
@@ -145,7 +137,6 @@ hierarchy:
   indicator:
     '1': ~
     '2': ~
-
 labels:
   dimnames:
     destination:
@@ -159,56 +150,16 @@ labels:
       fr: Indicateur
       it: Indicatore
     origin:
-      en: "Visitors' country of residence"
+      en: Visitors..country.of.residence
       de: Herkunftsland
-      fr: Pays de provenance
-      it: Paese di provenienza
+      fr: Pays.de.provenance
+      it: Paese.di.provenienza
   destination:
     '1':
       en: Zurich
       de: Zürich
       fr: Zürich
       it: Zürich
-    '2':
-      en: Bern
-      de: Bern / Berne
-      fr: Bern / Berne
-      it: Bern / Berne
-    '3':
-      en: Lucerne
-      de: Luzern
-      fr: Luzern
-      it: Luzern
-    '4':
-      en: Uri
-      de: Uri
-      fr: Uri
-      it: Uri
-    '5':
-      en: Schwyz
-      de: Schwyz
-      fr: Schwyz
-      it: Schwyz
-    '6':
-      en: Obwalden
-      de: Obwalden
-      fr: Obwalden
-      it: Obwalden
-    '7':
-      en: Nidwalden
-      de: Nidwalden
-      fr: Nidwalden
-      it: Nidwalden
-    '8':
-      en: Glarus
-      de: Glarus
-      fr: Glarus
-      it: Glarus
-    '9':
-      en: Zug
-      de: Zug
-      fr: Zug
-      it: Zug
     '10':
       en: Fribourg
       de: Fribourg / Freiburg
@@ -250,15 +201,20 @@ labels:
       fr: St. Gallen
       it: St. Gallen
     '18':
-      en: "Graubünden"
-      de: "Graubünden / Grigioni / Grischun"
-      fr: "Graubünden / Grigioni / Grischun"
-      it: "Graubünden / Grigioni / Grischun"
+      en: Graubünden
+      de: Graubünden / Grigioni / Grischun
+      fr: Graubünden / Grigioni / Grischun
+      it: Graubünden / Grigioni / Grischun
     '19':
       en: Aargau
       de: Aargau
       fr: Aargau
       it: Aargau
+    '2':
+      en: Bern
+      de: Bern / Berne
+      fr: Bern / Berne
+      it: Bern / Berne
     '20':
       en: Thurgau
       de: Thurgau
@@ -280,28 +236,63 @@ labels:
       fr: Valais / Wallis
       it: Valais / Wallis
     '24':
-      en: "Neuchâtel"
-      de: "Neuchâtel"
-      fr: "Neuchâtel"
-      it: "Neuchâtel"
+      en: Neuchâtel
+      de: Neuchâtel
+      fr: Neuchâtel
+      it: Neuchâtel
     '25':
       en: Geneva
-      de: "Genève"
-      fr: "Genève"
-      it: "Genève"
+      de: Genève
+      fr: Genève
+      it: Genève
     '26':
       en: Jura
       de: Jura
       fr: Jura
       it: Jura
+    '3':
+      en: Lucerne
+      de: Luzern
+      fr: Luzern
+      it: Luzern
+    '4':
+      en: Uri
+      de: Uri
+      fr: Uri
+      it: Uri
+    '5':
+      en: Schwyz
+      de: Schwyz
+      fr: Schwyz
+      it: Schwyz
+    '6':
+      en: Obwalden
+      de: Obwalden
+      fr: Obwalden
+      it: Obwalden
+    '7':
+      en: Nidwalden
+      de: Nidwalden
+      fr: Nidwalden
+      it: Nidwalden
+    '8':
+      en: Glarus
+      de: Glarus
+      fr: Glarus
+      it: Glarus
     '8100':
       en: Switzerland
       de: Schweiz
       fr: Suisse
       it: Schweiz
+    '9':
+      en: Zug
+      de: Zug
+      fr: Zug
+      it: Zug
   origin:
     '00':
-      en: "Visitors' country of residence - total"
+      en: Visitors' country of residence - total
       de: Herkunftsland - Total
       fr: Pays de provenance - total
       it: Paesi di provenienza - totale
@@ -332,12 +323,12 @@ labels:
       it: Italia
     '15':
       en: Austria
-      de: "Österreich"
+      de: Österreich
       fr: Autriche
       it: Austria
     '16':
       en: United Kingdom
-      de: Vereinigtes "Königreich"
+      de: Vereinigtes Königreich
       fr: Royaume-Uni
       it: Regno Unito
     '17':
@@ -362,18 +353,18 @@ labels:
       it: Lussemburgo
     '21':
       en: Denmark
-      de: "Dänemark"
+      de: Dänemark
       fr: Danemark
       it: Danimarca
     '22':
       en: Sweden
       de: Schweden
-      fr: "Suède"
+      fr: Suède
       it: Svezia
     '23':
       en: Norway
       de: Norwegen
-      fr: "Norvège"
+      fr: Norvège
       it: Norvegia
     '24':
       en: Finland
@@ -393,16 +384,16 @@ labels:
     '28':
       en: Greece
       de: Griechenland
-      fr: "Grèce"
+      fr: Grèce
       it: Grecia
     '29':
       en: Turkey
-      de: "Türkei"
+      de: Türkei
       fr: Turquie
       it: Turchia
     '31':
       en: Other European countries
-      de: "Übriges Europa"
+      de: Übriges Europa
       fr: Autres Europe
       it: Altri Europa
     '32':
@@ -428,7 +419,7 @@ labels:
     '36':
       en: Belarus
       de: Belarus
-      fr: "Bélarus"
+      fr: Bélarus
       it: Belarus
     '37':
       en: Bulgaria
@@ -453,7 +444,7 @@ labels:
     '41':
       en: United States
       de: Vereinigte Staaten
-      fr: "États-Unis"
+      fr: États-Unis
       it: Stati Uniti
     '42':
       en: Canada
@@ -468,7 +459,7 @@ labels:
     '44':
       en: Brazil
       de: Brasilien
-      fr: "Brésil"
+      fr: Brésil
       it: Brasile
     '45':
       en: Argentina
@@ -476,49 +467,49 @@ labels:
       fr: Argentine
       it: Argentina
     '47':
-      en: "Central America, Caribbean"
-      de: "Zentralamerika, Karibik"
-      fr: "Amérique Centrale, Caraïbes"
-      it: "America Centrale, Caraibi"
+      en: Central America, Caribbean
+      de: Zentralamerika, Karibik
+      fr: Amérique Centrale, Caraïbes
+      it: America Centrale, Caraibi
     '48':
       en: Other South American countries
-      de: "Übriges Südamerika"
+      de: Übriges Südamerika
       fr: Autres Amérique du Sud
       it: Altri Sudamerica
     '49':
       en: Other Central American countries
-      de: "Übriges Zentralamerika, Karibik"
-      fr: "Autres Amérique centrale, Caraïbes"
-      it: "Altri America Centrale, Caraibi"
+      de: Übriges Zentralamerika, Karibik
+      fr: Autres Amérique centrale, Caraïbes
+      it: Altri America Centrale, Caraibi
     '51':
       en: Egypt
-      de: "Ägypten"
-      fr: "Égypte"
+      de: Ägypten
+      fr: Égypte
       it: Egitto
     '52':
       en: Other North African countries
-      de: "Übriges Nordafrika"
+      de: Übriges Nordafrika
       fr: Autres Afrique du Nord
       it: Altri Nordafrica
     '53':
       en: South Africa
-      de: "Südafrika"
+      de: Südafrika
       fr: Afrique du Sud
       it: Sudafrica
     '54':
       en: Other African countries
-      de: "Übriges Afrika"
+      de: Übriges Afrika
       fr: Autres Afrique
       it: Altri Africa
     '60':
       en: Bahrain
       de: Bahrain
-      fr: "Bahreïn"
+      fr: Bahreïn
       it: Bahrein
     '61':
       en: Israel
       de: Israel
-      fr: "Israël"
+      fr: Israël
       it: Israele
     '62':
       en: India
@@ -532,9 +523,9 @@ labels:
       it: Giappone
     '66':
       en: Other South-East Asian countries
-      de: "Übriges Süd- und Ostasien"
-      fr: "Autres Asie de l'Est"
-      it: "Altri Asia del Sud e dell'Est"
+      de: Übriges Süd- und Ostasien
+      fr: Autres Asie de l'Est
+      it: Altri Asia del Sud e dell'Est
     '68':
       en: Qatar
       de: Katar
@@ -543,7 +534,7 @@ labels:
     '69':
       en: Kuwait
       de: Kuwait
-      fr: "Koweït"
+      fr: Koweït
       it: Kuwait
     '70':
       en: Australia
@@ -551,10 +542,10 @@ labels:
       fr: Australie
       it: Australia
     '71':
-      en: "Australia, New Zealand, Oceania"
-      de: "Australien, Neuseeland, Ozeanien"
-      fr: "Australie, N.Zélande, Océanie"
-      it: "Australie, Nuova Zelanda, Ozeania"
+      en: Australia, New Zealand, Oceania
+      de: Australien, Neuseeland, Ozeanien
+      fr: Australie, N.Zélande, Océanie
+      it: Australie, Nuova Zelanda, Ozeania
     '72':
       en: China
       de: China
@@ -573,12 +564,12 @@ labels:
     '75':
       en: Indonesia
       de: Indonesien
-      fr: "Indonésie"
+      fr: Indonésie
       it: Indonesia
     '76':
       en: South Korea
       de: Korea (Süd-)
-      fr: "Corée (Sud)"
+      fr: Corée (Sud)
       it: Corea (Sud)
     '77':
       en: Malaysia
@@ -591,10 +582,10 @@ labels:
       fr: Philippines
       it: Filippine
     '79':
-      en: "New Zealand, Oceania"
-      de: "Neuseeland, Ozeanien"
-      fr: "Nouvelle Zélande, Océanie"
-      it: "Nuova Zelanda, Oceania"
+      en: New Zealand, Oceania
+      de: Neuseeland, Ozeanien
+      fr: Nouvelle Zélande, Océanie
+      it: Nuova Zelanda, Oceania
     '80':
       en: Singapore
       de: Singapur
@@ -608,18 +599,18 @@ labels:
     '82':
       en: Taiwan (Chinese Taipei)
       de: Taiwan (Chinesisches Taipei)
-      fr: "Taïwan (Taipei chinois)"
+      fr: Taïwan (Taipei chinois)
       it: Taiwan (Taipei cinese)
     '83':
       en: Thailand
       de: Thailand
-      fr: "Thaïlande"
+      fr: Thaïlande
       it: Thailandia
     '84':
       en: Other West Asian countries
-      de: "Übriges Westasien"
-      fr: "Autres Asie de l'Ouest"
-      it: "Altri Asia dell'Ovest"
+      de: Übriges Westasien
+      fr: Autres Asie de l'Ouest
+      it: Altri Asia dell'Ovest
     '85':
       en: Estonia
       de: Estland
@@ -643,12 +634,12 @@ labels:
     '89':
       en: United Arab Emirates
       de: Vereinigte Arabische Emirate
-      fr: "Émirats arabes unis"
+      fr: Émirats arabes unis
       it: Emirati arabi uniti
     '90':
       en: Serbia and Montenegro
       de: Serbien und Montenegro
-      fr: Serbie et "Monténégro"
+      fr: Serbie et Monténégro
       it: Serbia e Montenegro
     '91':
       en: Croatia
@@ -657,7 +648,7 @@ labels:
       it: Croazia
     '92':
       en: Romania
-      de: "Rumänien"
+      de: Rumänien
       fr: Roumanie
       it: Romania
     '93':
@@ -673,12 +664,12 @@ labels:
     '95':
       en: Slovenia
       de: Slowenien
-      fr: "Slovénie"
+      fr: Slovénie
       it: Slovenia
     '96':
       en: Czechia
       de: Tschechien
-      fr: "Tchéquie"
+      fr: Tchéquie
       it: Cechia
     '97':
       en: Ukraine
@@ -693,15 +684,14 @@ labels:
   indicator:
     '1':
       en: Arrivals
-      de: "Ankünfte"
-      fr: "Arrivées"
+      de: Ankünfte
+      fr: Arrivées
       it: Arrivi
     '2':
       en: Overnight stays
-      de: "Logiernächte"
-      fr: "Nuitées"
+      de: Logiernächte
+      fr: Nuitées
       it: Pernottamenti
-
 details:
   en: |
     Hotel industry: hotels and health establishments
@@ -715,6 +705,6 @@ details:
   it: |
     Settore alberghiero: alberghi e case di cura
     Stabilimenti aperti: numero di stabilimenti aperti almeno un giorno nel mese censito
+utc.updated: 2025-11-17 16:13:26
+sha1: KMrpvB+8PlY3tF1Dw5xU+n7oO8M=
 
-# update checksum is managed programmatically
-update_checksum: ""
